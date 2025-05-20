@@ -44,12 +44,12 @@ function displayBook() {
 
     //Book Author
     const author = document.createElement("p");
-    author.textContent = Book.author;
+    author.textContent = `Author: ${Book.author}`;
     card.appendChild(author);
 
     //Book Page
     const page = document.createElement("p");
-    page.textContent = Book.pages;
+    page.textContent = `Pages: ${Book.pages} `;
     card.appendChild(page);
 
     //Book status
@@ -63,14 +63,14 @@ function displayBook() {
 
     //Toggle Status
     const toggleReadBTN = document.createElement("button");
-    toggleReadBTN.className = "toggle-read-btn";
+    toggleReadBTN.className = "toggle-read-btn btn";
     toggleReadBTN.setAttribute("data-id", Book.id);
     toggleReadBTN.textContent = "Toggle Read";
     card.appendChild(toggleReadBTN);
 
     //Delete Button
     const deleteBTN = document.createElement("button");
-    deleteBTN.className = "delete-btn";
+    deleteBTN.className = "delete-btn btn";
     deleteBTN.setAttribute("data-id", Book.id);
     deleteBTN.textContent = "Remove";
     card.appendChild(deleteBTN);
