@@ -4,25 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <h1 class="main-title">My Library</h1>
-    <button id="addBtn">Add New Book</button>
-
-    <dialog class="book-dialog">
-      <form id="dialog-form">
-        <input type="text" id="title" placeholder="Book title" required />
-        <input type="text" id="author" placeholder="Author" required />
-        <input type="number" id="pages" placeholder="Pages" required />
-        <label> <input type="checkbox" id="isRead" /> Read </label>
-        <button id="confirm-btn" type="submit">Confirm</button>
-        <button id="cancel-btn" type="button">Cancel</button>
-        <div class="alert"></div>
-      </form>
-    </dialog>
-    <div id="book-list"></div>
+    <div class="grid-container">
+      <div class="grid-top">
+        <h1 class="main-title">My Library</h1>
+        <button id="addBtn" class="btn">Add New Book</button>
+      </div>
+      <dialog class="book-dialog">
+        <form id="dialog-form">
+          <input type="text" id="title" placeholder="Book title" required />
+          <input type="text" id="author" placeholder="Author" required />
+          <input type="number" id="pages" placeholder="Pages" required />
+          <label> <input type="checkbox" id="isRead" /> Read </label>
+          <button id="confirm-btn" type="submit">Confirm</button>
+          <button id="cancel-btn" type="button">Cancel</button>
+          <div class="alert"></div>
+        </form>
+      </dialog>
+      <div id="book-list"></div>
+    </div>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
