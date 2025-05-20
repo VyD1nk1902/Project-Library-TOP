@@ -1,9 +1,35 @@
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+body {
+  font-family: "Ancizar Sans", sans-serif;
+  /* font-family: "Monstera", sans-serif; */
 }
 :root {
   --button-text: #ffff;
   --button-green: #10b981;
   --button-blue: #473fce;
   --button-red: #ef4444;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--button-blue);
+  color: var(--button-text);
+  border: none;
+}
+
+dialog {
+  /* Adjust dialog size */
+  /* min-width: 400px; */
+  padding: 24px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.16);
+  border: none;
+  /* Make sure it in the middle */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.2); /* BG blur */
 }

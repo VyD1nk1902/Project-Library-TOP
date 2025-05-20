@@ -1,7 +1,70 @@
-.toggle-read-btn {
-  margin: 10px;
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 1fr 1fr;
 }
 
-.delete-btn {
-  margin: 10px;
+.grid-top {
+  padding: 20px;
+}
+
+#book-list {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#dialog-form input {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  accent-color: #f59e0b;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+#confirm-btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--button-green);
+  color: var(--button-text);
+  border: none;
+}
+
+#cancel-btn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--button-red);
+  color: var(--button-text);
+  border: none;
 }
