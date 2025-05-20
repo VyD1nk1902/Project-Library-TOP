@@ -1,0 +1,9 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --button-text: #ffff;
+  --button-green: #10b981;
+  --button-blue: #473fce;
+  --button-red: #ef4444;
+}
