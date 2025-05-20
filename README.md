@@ -22,3 +22,5 @@ This is a small project by TOP – a simulation of a **book library**.
 - 🎨 **CSS3**
 - 🎯 **JavaScript**
 - 🔤 **Google Fonts** for typography
+
+[Live Demo](https://vyd1nk1902.github.io/Project-Library-TOP/) :point_left:
